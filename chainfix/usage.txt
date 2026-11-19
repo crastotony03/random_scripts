@@ -1,0 +1,12 @@
+What	                Flag	Default
+Character to find	--old	A
+Replacement	        --new	L
+First line	        --start	7596
+Last line	        --end	11076
+Column (1-based)	--col	22 (PDB chain ID)
+File extension	        --ext	.pdb
+Output folder	        -o	<folder>/modified
+
+chainfix . --old A --new L --start 7596 --end 11076 -o ./converted
+
+python3 replace_chain.py ~/models --old B --new C --start 100 --end 500 -o ~/models_out
